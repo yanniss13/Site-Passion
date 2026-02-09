@@ -985,17 +985,17 @@ body:has(#sel-corrode:checked) .slide-corrode .map-info {
 }
 
 .footer-valorant {
-  background: #0f1923;
-  color: #ece8e1;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 2px solid #ff4655;
+    background: #0f1923;
+    color: #ece8e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #ff4655;
 }
 
 .footer-valorant p {
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
