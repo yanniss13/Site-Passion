@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Arsenal</title>
+    <link href="css2.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Valorant Arsenal</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index2.html" class="nav-link">AGENTS</a>
+            <a href="armes.html" class="nav-link">ARMES</a>
+            <a href="maps.html" class="nav-link active">CARTES</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- ARME 1: VANDAL -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-vandal" class="weapon-toggle">
+            <label for="modal-vandal" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/9c82e19d-4575-0200-1a81-3eacf00cf872/displayicon.png"
+                    class="weapon-img" alt="Vandal">
+                <div class="weapon-name">Vandal</div>
+            </label>
+
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-vandal" class="close-btn">×</label>
+                    <h2 style="font-family: 'Tungsten'; font-size: 3rem; margin: 0;">VANDAL</h2>
+                    <img src="https://media.valorant-api.com/weapons/9c82e19d-4575-0200-1a81-3eacf00cf872/displayicon.png"
+                        class="modal-weapon-img" alt="Vandal">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 50m</td>
+                                <td class="dmg-head">160</td>
+                                <td>40</td>
+                                <td>34</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="color: var(--val-gray); margin-top: 1rem;">*One-tap à toute distance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARME 2: PHANTOM -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-phantom" class="weapon-toggle">
+            <label for="modal-phantom" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/ee8e8d15-496b-07ac-e5f6-8fae5d4c7b1a/displayicon.png"
+                    class="weapon-img" alt="Phantom">
+                <div class="weapon-name">Phantom</div>
+            </label>
+
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-phantom" class="close-btn">×</label>
+                    <h2 style="font-family: 'Tungsten'; font-size: 3rem; margin: 0;">PHANTOM</h2>
+                    <img src="https://media.valorant-api.com/weapons/ee8e8d15-496b-07ac-e5f6-8fae5d4c7b1a/displayicon.png"
+                        class="modal-weapon-img" alt="Phantom">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 15m</td>
+                                <td class="dmg-head">156</td>
+                                <td>39</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">15 - 30m</td>
+                                <td class="dmg-head">140</td>
+                                <td>35</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">124</td>
+                                <td>31</td>
+                                <td>26</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARME 3: OPERATOR -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-op" class="weapon-toggle">
+            <label for="modal-op" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/a03b24d3-4319-996d-0f8c-94bbfba1dfc7/displayicon.png"
+                    class="weapon-img" alt="Operator">
+                <div class="weapon-name">Operator</div>
+            </label>
+
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-op" class="close-btn">×</label>
+                    <h2 style="font-family: 'Tungsten'; font-size: 3rem; margin: 0;">OPERATOR</h2>
+                    <img src="https://media.valorant-api.com/weapons/a03b24d3-4319-996d-0f8c-94bbfba1dfc7/displayicon.png"
+                        class="modal-weapon-img" alt="Operator">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 50m</td>
+                                <td class="dmg-head">255</td>
+                                <td>150</td>
+                                <td>120</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="color: var(--val-gray); margin-top: 1rem;">*One-shot corps à toute distance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARME 4: SHERIFF -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-sheriff" class="weapon-toggle">
+            <label for="modal-sheriff" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/e336c6b8-418d-9340-d77f-7a9e4cfe0702/displayicon.png"
+                    class="weapon-img" alt="Sheriff">
+                <div class="weapon-name">Sheriff</div>
+            </label>
+
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-sheriff" class="close-btn">×</label>
+                    <h2 style="font-family: 'Tungsten'; font-size: 3rem; margin: 0;">SHERIFF</h2>
+                    <img src="https://media.valorant-api.com/weapons/e336c6b8-418d-9340-d77f-7a9e4cfe0702/displayicon.png"
+                        class="modal-weapon-img small-gun" alt="Sheriff">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 30m</td>
+                                <td class="dmg-head">159</td>
+                                <td>55</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">145</td>
+                                <td>50</td>
+                                <td>42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARME 5: SPECTRE -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-spectre" class="weapon-toggle">
+            <label for="modal-spectre" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/462080d1-4035-2937-7c09-27aa2a5c27a7/displayicon.png"
+                    class="weapon-img" alt="Spectre">
+                <div class="weapon-name">Spectre</div>
+            </label>
+
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-spectre" class="close-btn">×</label>
+                    <h2 style="font-family: 'Tungsten'; font-size: 3rem; margin: 0;">SPECTRE</h2>
+                    <img src="https://media.valorant-api.com/weapons/462080d1-4035-2937-7c09-27aa2a5c27a7/displayicon.png"
+                        class="modal-weapon-img" alt="Spectre">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 15m</td>
+                                <td class="dmg-head">78</td>
+                                <td>26</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">15 - 30m</td>
+                                <td class="dmg-head">66</td>
+                                <td>22</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">60</td>
+                                <td>20</td>
+                                <td>17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- CLASSIC -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-classic" class="weapon-toggle">
+            <label for="modal-classic" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/29a0cfab-485b-f5d5-779a-b59f85e204a8/displayicon.png"
+                    class="weapon-img small-gun" alt="Classic">
+                <div class="weapon-name">Classic</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-classic" class="close-btn">×</label>
+                    <h2>CLASSIC</h2>
+                    <img src="https://media.valorant-api.com/weapons/29a0cfab-485b-f5d5-779a-b59f85e204a8/displayicon.png"
+                        class="modal-weapon-img small-gun" alt="Classic">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 30m</td>
+                                <td class="dmg-head">78</td>
+                                <td>26</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">66</td>
+                                <td>22</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- SHORTY -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-shorty" class="weapon-toggle">
+            <label for="modal-shorty" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/42da8ccc-40d5-affc-beec-15aa47b42eda/displayicon.png"
+                    class="weapon-img" alt="Shorty">
+                <div class="weapon-name">Shorty</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-shorty" class="close-btn">×</label>
+                    <h2>SHORTY</h2>
+                    <img src="https://media.valorant-api.com/weapons/42da8ccc-40d5-affc-beec-15aa47b42eda/displayicon.png"
+                        class="modal-weapon-img" alt="Shorty">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 7m</td>
+                                <td class="dmg-head">22</td>
+                                <td>11</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">7 - 15m</td>
+                                <td class="dmg-head">12</td>
+                                <td>6</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>*Dégâts par plomb (12 plombs)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FRENZY -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-frenzy" class="weapon-toggle">
+            <label for="modal-frenzy" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/44d4e95c-4157-0037-81b2-17841bf2e8e3/displayicon.png"
+                    class="weapon-img small-gun" alt="Frenzy">
+                <div class="weapon-name">Frenzy</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-frenzy" class="close-btn">×</label>
+                    <h2>FRENZY</h2>
+                    <img src="https://media.valorant-api.com/weapons/44d4e95c-4157-0037-81b2-17841bf2e8e3/displayicon.png"
+                        class="modal-weapon-img small-gun" alt="Frenzy">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 20m</td>
+                                <td class="dmg-head">78</td>
+                                <td>26</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">20 - 50m</td>
+                                <td class="dmg-head">63</td>
+                                <td>21</td>
+                                <td>17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- GHOST -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-ghost" class="weapon-toggle">
+            <label for="modal-ghost" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/1baa85b4-4c70-1284-64bb-6481dfc3bb4e/displayicon.png"
+                    class="weapon-img" alt="Ghost">
+                <div class="weapon-name">Ghost</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-ghost" class="close-btn">×</label>
+                    <h2>GHOST</h2>
+                    <img src="https://media.valorant-api.com/weapons/1baa85b4-4c70-1284-64bb-6481dfc3bb4e/displayicon.png"
+                        class="modal-weapon-img" alt="Ghost">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 30m</td>
+                                <td class="dmg-head">105</td>
+                                <td>30</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">87</td>
+                                <td>25</td>
+                                <td>21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- STINGER -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-stinger" class="weapon-toggle">
+            <label for="modal-stinger" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/f7e1b454-4ad4-1063-ec0a-159e56b58941/displayicon.png"
+                    class="weapon-img" alt="Stinger">
+                <div class="weapon-name">Stinger</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-stinger" class="close-btn">×</label>
+                    <h2>STINGER</h2>
+                    <img src="https://media.valorant-api.com/weapons/f7e1b454-4ad4-1063-ec0a-159e56b58941/displayicon.png"
+                        class="modal-weapon-img" alt="Stinger">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 15m</td>
+                                <td class="dmg-head">67</td>
+                                <td>27</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">15 - 30m</td>
+                                <td class="dmg-head">57</td>
+                                <td>23</td>
+                                <td>19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUCKY -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-bucky" class="weapon-toggle">
+            <label for="modal-bucky" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/910be174-449b-c412-ab22-d0873436b21b/displayicon.png"
+                    class="weapon-img" alt="Bucky">
+                <div class="weapon-name">Bucky</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-bucky" class="close-btn">×</label>
+                    <h2>BUCKY</h2>
+                    <img src="https://media.valorant-api.com/weapons/910be174-449b-c412-ab22-d0873436b21b/displayicon.png"
+                        class="modal-weapon-img" alt="Bucky">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 8m</td>
+                                <td class="dmg-head">40</td>
+                                <td>20</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">8 - 12m</td>
+                                <td class="dmg-head">26</td>
+                                <td>13</td>
+                                <td>11</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>*Dégâts par plomb (15 plombs)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JUDGE -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-judge" class="weapon-toggle">
+            <label for="modal-judge" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/ec845bf4-4f79-ddda-a3da-0db3774b2794/displayicon.png"
+                    class="weapon-img" alt="Judge">
+                <div class="weapon-name">Judge</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-judge" class="close-btn">×</label>
+                    <h2>JUDGE</h2>
+                    <img src="https://media.valorant-api.com/weapons/ec845bf4-4f79-ddda-a3da-0db3774b2794/displayicon.png"
+                        class="modal-weapon-img" alt="Judge">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 10m</td>
+                                <td class="dmg-head">34</td>
+                                <td>17</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">10 - 15m</td>
+                                <td class="dmg-head">20</td>
+                                <td>10</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>*Dégâts par plomb (12 plombs)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BULLDOG -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-bulldog" class="weapon-toggle">
+            <label for="modal-bulldog" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/ae3de142-4d85-2547-dd26-4e90bed35cf7/displayicon.png"
+                    class="weapon-img" alt="Bulldog">
+                <div class="weapon-name">Bulldog</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-bulldog" class="close-btn">×</label>
+                    <h2>BULLDOG</h2>
+                    <img src="https://media.valorant-api.com/weapons/ae3de142-4d85-2547-dd26-4e90bed35cf7/displayicon.png"
+                        class="modal-weapon-img" alt="Bulldog">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 50m</td>
+                                <td class="dmg-head">115</td>
+                                <td>35</td>
+                                <td>29</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- GUARDIAN -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-guardian" class="weapon-toggle">
+            <label for="modal-guardian" class="weapon-card">
+                <img src="/image/Guardian-removebg-preview.png" class="weapon-img" alt="Guardian">
+                <div class="weapon-name">Guardian</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-guardian" class="close-btn">×</label>
+                    <h2>GUARDIAN</h2>
+                    <img src="/image/Guardian-removebg-preview.png" class="modal-weapon-img" alt="Guardian">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 50m</td>
+                                <td class="dmg-head">195</td>
+                                <td>65</td>
+                                <td>48</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- MARSHAL -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-marshal" class="weapon-toggle">
+            <label for="modal-marshal" class="weapon-card">
+                <img src="/image/marshal-removebg-preview.png" class="weapon-img" alt="Marshal">
+                <div class="weapon-name">Marshal</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-marshal" class="close-btn">×</label>
+                    <h2>MARSHAL</h2>
+                    <img src="/image/marshal-removebg-preview.png" class="modal-weapon-img" alt="Marshal">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 50m</td>
+                                <td class="dmg-head">202</td>
+                                <td>101</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUTLAW -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-outlaw" class="weapon-toggle">
+            <label for="modal-outlaw" class="weapon-card">
+                <img src="/image/ootlaw-removebg-preview.png" class="weapon-img" alt="Outlaw">
+                <div class="weapon-name">Outlaw</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-outlaw" class="close-btn">×</label>
+                    <h2>OUTLAW</h2>
+                    <img src="/image/ootlaw-removebg-preview.png" class="modal-weapon-img" alt="Outlaw">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 50m</td>
+                                <td class="dmg-head">238</td>
+                                <td>140</td>
+                                <td>119</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARES -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-ares" class="weapon-toggle">
+            <label for="modal-ares" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/55d8a0f4-4274-ca67-fe2c-06ab45efdf58/displayicon.png"
+                    class="weapon-img" alt="Ares">
+                <div class="weapon-name">Ares</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-ares" class="close-btn">×</label>
+                    <h2>ARES</h2>
+                    <img src="https://media.valorant-api.com/weapons/55d8a0f4-4274-ca67-fe2c-06ab45efdf58/displayicon.png"
+                        class="modal-weapon-img" alt="Ares">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 30m</td>
+                                <td class="dmg-head">72</td>
+                                <td>30</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">67</td>
+                                <td>28</td>
+                                <td>23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ODIN -->
+        <div class="weapon-wrapper">
+            <input type="checkbox" id="modal-odin" class="weapon-toggle">
+            <label for="modal-odin" class="weapon-card">
+                <img src="https://media.valorant-api.com/weapons/63e6c2b6-4a8e-869c-3d4c-e38355226584/displayicon.png"
+                    class="weapon-img" alt="Odin">
+                <div class="weapon-name">Odin</div>
+            </label>
+            <div class="modal-overlay">
+                <div class="weapon-modal-content">
+                    <label for="modal-odin" class="close-btn">×</label>
+                    <h2>ODIN</h2>
+                    <img src="https://media.valorant-api.com/weapons/63e6c2b6-4a8e-869c-3d4c-e38355226584/displayicon.png"
+                        class="modal-weapon-img" alt="Odin">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Distance</th>
+                                <th>Tête</th>
+                                <th>Corps</th>
+                                <th>Jambes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="range-col">0 - 30m</td>
+                                <td class="dmg-head">95</td>
+                                <td>38</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td class="range-col">30 - 50m</td>
+                                <td class="dmg-head">77</td>
+                                <td>31</td>
+                                <td>26</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

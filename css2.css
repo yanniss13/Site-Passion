@@ -1,0 +1,985 @@
+:root {
+    --val-red: #ff4655;
+    --val-dark: #0f1923;
+    --val-white: #ece8e1;
+    --val-gray: #768079;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--val-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--val-gray);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--val-red);
+    /* Devient rouge au survol */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Cache TOUS les checkbox et radios qui servent à la logique */
+input[type="checkbox"],
+input[type="radio"] {
+    display: none !important;
+}
+
+
+body {
+    background-color: var(--val-dark);
+    color: var(--val-white);
+    font-family: 'DIN Next LT Pro', sans-serif;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-family: 'Tungsten', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- NAVIGATION (Agents / Armes) --- */
+.nav-link {
+    color: var(--val-white);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    font-family: 'Tungsten', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--val-red);
+}
+
+
+/* --- BOUTONS DE FILTRE --- */
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--val-white);
+    color: var(--val-white);
+    font-family: 'Tungsten';
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 70, 85, 0.2);
+    border-color: var(--val-red);
+}
+
+/* BOUTON ACTIF */
+body:has(#filter-all:checked) .filter-btn[for="filter-all"],
+body:has(#filter-duelist:checked) .filter-btn[for="filter-duelist"],
+body:has(#filter-initiator:checked) .filter-btn[for="filter-initiator"],
+body:has(#filter-sentinel:checked) .filter-btn[for="filter-sentinel"],
+body:has(#filter-controller:checked) .filter-btn[for="filter-controller"] {
+    background: var(--val-red);
+    border-color: var(--val-red);
+}
+
+/* --- CONTAINER DES CARTES (FLEXBOX) --- */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centre le groupe */
+    gap: 30px;
+    /* Un peu plus d'espace pour respirer */
+    padding: 40px 20px;
+}
+
+
+
+/* LOGIQUE DE FILTRAGE CORRIGÉE */
+/* On cache le wrapper entier s'il ne contient pas la classe demandée */
+
+body:has(#filter-duelist:checked) .container .agent-wrapper:not(:has(.duelist)),
+body:has(#filter-initiator:checked) .container .agent-wrapper:not(:has(.initiator)),
+body:has(#filter-sentinel:checked) .container .agent-wrapper:not(:has(.sentinel)),
+body:has(#filter-controller:checked) .container .agent-wrapper:not(:has(.controller)) {
+    display: none;
+}
+
+
+/* --- CARTE AGENT --- */
+.card-label {
+    /* On force une taille stricte */
+    flex: 0 0 280px;
+    width: 280px;
+    height: 400px;
+
+    /* Marge automatique pour éviter que ça colle */
+    margin-bottom: 20px;
+
+    display: block;
+    background: #1f2731;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    /* Ombre portée par défaut pour détacher du fond */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-label:hover {
+    border-color: var(--val-red);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.card-label:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+    font-family: 'Tungsten';
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- MODALE --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 25, 35, 0.98);
+    z-index: 1000;
+    display: none;
+    /* Caché par défaut */
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* L'ouverture magique */
+.agent-toggle:checked+.card-label+.modal-overlay,
+/* Cas où modale est après label */
+.agent-toggle:checked~.modal-overlay {
+    /* Cas où modale est plus loin */
+    display: flex;
+}
+
+/* Si vos checkbox sont loins, ceci force l'ouverture si l'ID correspond */
+/* Note : Avec les checkbox déplacés, assurez-vous que la modale est DANS le container, juste après le label de l'agent */
+/* OU utilisez la structure : Checkbox -> Label -> Modale */
+
+.modal-content {
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    background: var(--val-dark);
+    border: 1px solid var(--val-white);
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--val-white);
+    color: var(--val-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close-btn:hover {
+    background: var(--val-red);
+    border-color: var(--val-red);
+}
+
+.modal-left {
+    flex: 1;
+    background: #252e38;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.modal-agent-img {
+    height: 110%;
+    width: auto;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+}
+
+.modal-right {
+    flex: 1.5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+/* TABS */
+.tabs-nav {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 1rem;
+}
+
+.tab-label {
+    width: auto;
+    height: auto;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0.5;
+}
+
+.tab-label:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.tab-label img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+    margin-top: 1rem;
+}
+
+.tab-radio-0:checked~.modal-content .tabs-nav .label-0,
+.tab-radio-1:checked~.modal-content .tabs-nav .label-1,
+.tab-radio-2:checked~.modal-content .tabs-nav .label-2,
+.tab-radio-3:checked~.modal-content .tabs-nav .label-3 {
+    opacity: 1;
+    transform: scale(1.2);
+    border-bottom: 2px solid var(--val-red);
+}
+
+.tab-radio-0:checked~.modal-content .modal-right .video-0,
+.tab-radio-1:checked~.modal-content .modal-right .video-1,
+.tab-radio-2:checked~.modal-content .modal-right .video-2,
+.tab-radio-3:checked~.modal-content .modal-right .video-3 {
+    display: block;
+}
+
+/* --- SECTION ARMES (ARSENAL) --- */
+
+/* Carte Arme */
+.weapon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: #1f2731;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    /* Pour s'aligner dans le container flex comme les agents */
+    flex: 0 0 280px;
+    width: 280px;
+}
+
+.weapon-card:hover {
+    border-color: var(--val-red);
+    background: #2a3542;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.weapon-img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s;
+}
+
+.weapon-card:hover .weapon-img {
+    transform: scale(1.1);
+}
+
+.weapon-name {
+    font-family: 'Tungsten';
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: var(--val-white);
+}
+
+/* --- MODALE ARME --- */
+/* Le input toggle pour l'arme */
+.weapon-toggle {
+    display: none !important;
+}
+
+/* Ouverture Modale Arme */
+.weapon-toggle:checked+label+.modal-overlay,
+.weapon-toggle:checked~.modal-overlay {
+    display: flex;
+}
+
+.weapon-modal-content {
+    background: var(--val-dark);
+    border: 1px solid var(--val-white);
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 600px;
+    padding: 3rem;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.weapon-modal-content h2 {
+    grid-column: 1 / -1;
+    text-align: left;
+    font-family: 'Tungsten';
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid var(--val-red);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.modal-weapon-img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+/* Tableau de dégâts */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+th,
+td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    color: var(--val-red);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+td {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.range-col {
+    text-align: left;
+    color: var(--val-gray);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.dmg-head {
+    color: #ffeb3b;
+}
+
+.weapon-modal-content p {
+    grid-column: 1 / -1;
+    text-align: right;
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--val-gray);
+}
+
+/* --- CORRECTION TAILLE PISTOLETS --- */
+/* Force les petites armes à ne pas prendre toute la largeur */
+.small-gun {
+    max-width: 350px !important;
+    width: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- MENU BURGER (Mobile) --- */
+
+/* 1. On cache la checkbox de contrôle */
+.burger-checkbox {
+    display: none !important;
+    /* Ou opacity: 0 comme vu avant */
+}
+
+/* 2. Style du bouton Burger (3 traits) */
+.burger-btn {
+    display: none;
+    /* Caché par défaut sur PC */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    width: 40px;
+    margin: 1rem auto;
+    /* Centré */
+    padding: 5px;
+    border: 1px solid var(--val-white);
+}
+
+.burger-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--val-white);
+    transition: 0.3s;
+}
+
+/* 3. Animation du Burger quand il est actif (Croix) */
+.burger-checkbox:checked+.burger-btn span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+    background-color: var(--val-red);
+}
+
+.burger-checkbox:checked+.burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-checkbox:checked+.burger-btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+    background-color: var(--val-red);
+}
+
+/* --- PAGE MAPS (Galerie Plein Écran - VERSION CORRIGÉE) --- */
+
+/* Configuration de la page Maps */
+.maps-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps-page header {
+    flex: 0 0 auto;
+    z-index: 100;
+    /* Header toujours au-dessus */
+    background: rgba(15, 25, 35, 0.95);
+}
+
+.maps-container {
+    flex: 1;
+    display: flex;
+    position: relative;
+    height: 100%;
+    /* Important pour ne pas déborder */
+}
+
+/* --- BARRE LATÉRALE --- */
+.maps-sidebar {
+    width: 300px;
+    background: var(--val-dark);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    /* Au-dessus des images */
+    overflow-y: auto;
+}
+
+.sidebar-inner {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-link {
+    font-family: 'Tungsten', sans-serif;
+    font-size: 2.5rem;
+    color: var(--val-gray);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-left: 6px solid transparent;
+}
+
+.map-link:hover {
+    color: var(--val-white);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), transparent);
+    padding-left: 40px;
+}
+
+/* --- ZONE D'AFFICHAGE (VIEWER) --- */
+.maps-viewer {
+    flex: 1;
+    position: relative;
+    /* Référence pour position:absolute */
+    background: #000;
+}
+
+/* STYLE DU SLIDE (L'Image) */
+.map-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Par défaut caché */
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+
+    /* Centrage */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Important pour que le flou ne bave pas */
+    background: #000;
+    /* Fond noir de sécurité */
+}
+
+.bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Elle remplit tout l'écran ! */
+    object-fit: cover;
+
+    /* Magie : Flou + Sombre pour faire ressortir l'image de devant */
+    filter: blur(30px) brightness(0.4);
+    transform: scale(1.1);
+    /* Zoom pour cacher les bords blancs du flou */
+    z-index: 1;
+    /* Tout au fond */
+}
+
+.main-img {
+    position: relative;
+    /* Pour être devant */
+    z-index: 5;
+
+    /* Elle s'adapte sans jamais être coupée */
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+    /* On voit tout */
+    object-fit: contain;
+
+    /* Petite ombre portée pour l'effet de profondeur */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+/* STYLE DE L'IMAGE */
+.map-slide img {
+    /* Taille max pour ne jamais dépasser l'écran */
+    max-width: 100%;
+    max-height: 100%;
+
+    display: block;
+    object-fit: cover;
+}
+
+/* --- LOGIQUE D'ACTIVATION (Checkboxes) --- */
+
+/* 1. Style du lien actif dans la liste */
+body:has(#sel-ascent:checked) .map-link[for="sel-ascent"],
+body:has(#sel-bind:checked) .map-link[for="sel-bind"],
+body:has(#sel-breeze:checked) .map-link[for="sel-breeze"],
+body:has(#sel-fracture:checked) .map-link[for="sel-fracture"],
+body:has(#sel-haven:checked) .map-link[for="sel-haven"],
+body:has(#sel-icebox:checked) .map-link[for="sel-icebox"],
+body:has(#sel-lotus:checked) .map-link[for="sel-lotus"],
+body:has(#sel-pearl:checked) .map-link[for="sel-pearl"],
+body:has(#sel-split:checked) .map-link[for="sel-split"],
+body:has(#sel-abyss:checked) .map-link[for="sel-abyss"],
+body:has(#sel-corrode:checked) .map-link[for="sel-corrode"] {
+    color: var(--val-red);
+    border-left-color: var(--val-red);
+    background: linear-gradient(90deg, rgba(255, 70, 85, 0.1), transparent);
+    padding-left: 40px;
+}
+
+/* 2. Afficher la slide correspondante */
+body:has(#sel-ascent:checked) .slide-ascent,
+body:has(#sel-bind:checked) .slide-bind,
+body:has(#sel-breeze:checked) .slide-breeze,
+body:has(#sel-fracture:checked) .slide-fracture,
+body:has(#sel-haven:checked) .slide-haven,
+body:has(#sel-icebox:checked) .slide-icebox,
+body:has(#sel-lotus:checked) .slide-lotus,
+body:has(#sel-pearl:checked) .slide-pearl,
+body:has(#sel-split:checked) .slide-split,
+body:has(#sel-abyss:checked) .slide-abyss,
+body:has(#sel-corrode:checked) .slide-corrode {
+    opacity: 1;
+    visibility: visible;
+    /* Rend l'élément visible */
+    z-index: 10;
+    /* Le place au-dessus des autres */
+}
+
+/* 3. Texte d'info (Le titre sur l'image) */
+.map-info {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 20;
+    /* Au-dessus de l'image */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s 0.2s;
+    /* Petit délai */
+}
+
+.map-info h2 {
+    font-family: 'Tungsten';
+    font-size: 5rem;
+    color: var(--val-white);
+    margin: 0;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.map-info p {
+    font-size: 1.5rem;
+    color: var(--val-red);
+    font-weight: bold;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+/* Animation d'apparition du texte */
+body:has(#sel-ascent:checked) .slide-ascent .map-info,
+body:has(#sel-bind:checked) .slide-bind .map-info,
+body:has(#sel-breeze:checked) .slide-breeze .map-info,
+body:has(#sel-fracture:checked) .slide-fracture .map-info,
+body:has(#sel-haven:checked) .slide-haven .map-info,
+body:has(#sel-icebox:checked) .slide-icebox .map-info,
+body:has(#sel-lotus:checked) .slide-lotus .map-info,
+body:has(#sel-pearl:checked) .slide-pearl .map-info,
+body:has(#sel-split:checked) .slide-split .map-info,
+body:has(#sel-abyss:checked) .slide-abyss .map-info,
+body:has(#sel-corrode:checked) .slide-corrode .map-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    .maps-container {
+        flex-direction: column-reverse;
+    }
+
+    .maps-sidebar {
+        width: 100%;
+        height: 150px;
+        flex: none;
+        border-top: 2px solid var(--val-red);
+    }
+
+    .sidebar-inner {
+        flex-direction: row;
+        height: 100%;
+        overflow-x: auto;
+        padding: 0;
+        align-items: center;
+    }
+
+    .map-link {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border-left: none;
+        white-space: nowrap;
+    }
+
+    body:has(:checked) .map-link[for] {
+        /* Reset mobile active style */
+        padding-left: 20px;
+        border-bottom: 3px solid var(--val-red);
+        background: none;
+    }
+
+    .map-info {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .map-info h2 {
+        font-size: 3rem;
+    }
+
+    .maps-page {
+        height: auto;
+        /* On laisse la page grandir si besoin */
+        min-height: 100vh;
+    }
+
+    /* Le conteneur s'inverse : Menu en haut, Image en dessous */
+    .maps-container {
+        flex-direction: column;
+    }
+
+    /* BARRE LATÉRALE (Devient une barre en haut) */
+    .maps-sidebar {
+        width: 100%;
+        height: auto;
+        /* Taille auto selon si ouvert/fermé */
+        flex: none;
+        border-right: none;
+        border-bottom: 2px solid var(--val-red);
+        background: var(--val-dark);
+        position: relative;
+        z-index: 100;
+    }
+
+    /* En-tête du menu (Titre + Burger) */
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-title {
+        font-family: 'Tungsten';
+        font-size: 2rem;
+        color: var(--val-white);
+        letter-spacing: 1px;
+    }
+
+    /* Bouton Burger */
+    .burger-btn {
+        display: flex;
+        margin: 0;
+    }
+
+    /* LA LISTE (Cachée par défaut) */
+    .sidebar-inner {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Quand checkbox cochée -> Afficher la liste */
+    #maps-burger-toggle:checked~.sidebar-inner {
+        display: flex;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    /* Style des liens sur mobile */
+    .map-link {
+        border-left: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 15px 20px;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+        background: var(--val-dark);
+    }
+
+    /* Lien actif sur mobile */
+    body:has(:checked) .map-link[for] {
+        background: var(--val-red);
+        color: var(--val-white);
+        padding-left: 20px;
+        /* Pas de décalage */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* ZONE IMAGE (Viewer) */
+    .maps-viewer {
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .map-info h2 {
+        font-size: 4rem;
+    }
+}
+
+/* Animation d'ouverture */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+        height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-left {
+        height: 250px;
+        flex: none;
+    }
+
+    .modal-right {
+        padding: 1.5rem;
+        flex: none;
+    }
+
+    .weapon-modal-content {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .weapon-modal-content h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /* On montre le bouton burger */
+    .burger-btn {
+        display: flex;
+    }
+
+    /* On cache les filtres par défaut */
+    .filter-controls {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(15, 25, 35, 0.95);
+        padding: 1rem;
+        border-bottom: 1px solid var(--val-red);
+        animation: slideDown 0.3s ease-out;
+    }
+
+    /* Si checkbox cochée, on montre les filtres */
+    .burger-checkbox:checked~.filter-controls {
+        display: flex;
+    }
+
+    /* Style des boutons dans le menu */
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* Petite animation d'ouverture */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

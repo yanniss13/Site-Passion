@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT // NO JS</title>
+    <link href="css2.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Valorant Agents</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index2.html" class="nav-link">AGENTS</a>
+            <a href="arsenal.html" class="nav-link">ARMES</a>
+            <a href="maps.html" class="nav-link active">CARTES</a>
+        </nav>
+    </header>
+
+    <!-- Checkbox cachée qui gère l'état Ouvert/Fermé du menu -->
+    <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+
+    <!-- Le Bouton Burger (Visible seulement sur mobile) -->
+    <label for="burger-toggle" class="burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <!-- BOUTONS DE FILTRE (Juste au-dessus des agents) -->
+    <div class="filter-controls">
+        <input type="radio" name="role-filter" id="filter-all" checked>
+        <label for="filter-all" class="filter-btn">TOUS</label>
+
+        <input type="radio" name="role-filter" id="filter-duelist">
+        <label for="filter-duelist" class="filter-btn">DUELISTES</label>
+
+        <input type="radio" name="role-filter" id="filter-initiator">
+        <label for="filter-initiator" class="filter-btn">INITIATEURS</label>
+
+        <input type="radio" name="role-filter" id="filter-sentinel">
+        <label for="filter-sentinel" class="filter-btn">SENTINELLES</label>
+
+        <input type="radio" name="role-filter" id="filter-controller">
+        <label for="filter-controller" class="filter-btn">CONTRÔLEURS</label>
+    </div>
+
+
+    <div class="container">
+
+        <!-- AGENT: Astra -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-astra" class="agent-toggle">
+
+            <label for="modal-astra" class="card-label controller">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ba51d43803082941b0274b66413b0acc972546dd-616x822.png"
+                    class="card-img" loading="lazy" alt="Astra">
+                <div class="card-name">Astra</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-astra" id="tab-astra-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-astra" id="tab-astra-1" class="tab-radio-1">
+                <input type="radio" name="tabs-astra" id="tab-astra-2" class="tab-radio-2">
+                <input type="radio" name="tabs-astra" id="tab-astra-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-astra" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ba51d43803082941b0274b66413b0acc972546dd-616x822.png"
+                            class="modal-agent-img" alt="Astra">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-astra-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c68e59e5036f302959366885133e4ab4850bb650-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-astra-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/fe8a6fdb673e9f5a94c3379bde8e78aa9ec7c6c1-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-astra-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6c53596bfc3c04a16087fd4553b03c1449d84987-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-astra-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/1e6ad40dac4f0e475a055b96864a4d5c1eabf34e-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/e54ed10355d571c15ef2ee5a0897cca06851fd56.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/2aafadb8cef8c1ab2894a657c23988e921b006c8.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/3439c939846214067561746668bfd96805efc225.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/6bed3444d432f27cdac08f3be1dad2760be7052f.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Breach -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-breach" class="agent-toggle">
+
+            <label for="modal-breach" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/e435c3378b7999a3338b408dbb5da8ba63f91150-616x822.png"
+                    class="card-img" loading="lazy" alt="Breach">
+                <div class="card-name">Breach</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-breach" id="tab-breach-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-breach" id="tab-breach-1" class="tab-radio-1">
+                <input type="radio" name="tabs-breach" id="tab-breach-2" class="tab-radio-2">
+                <input type="radio" name="tabs-breach" id="tab-breach-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-breach" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/e435c3378b7999a3338b408dbb5da8ba63f91150-616x822.png"
+                            class="modal-agent-img" alt="Breach">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-breach-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/cca58acc93956ee755ccea171a36584a402793c2-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-breach-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/668ca53aca3c788f4b9ef8ad35e86979b84745db-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-breach-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2621c00e27da47f6a57772902c7806a7bfe0eb66-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-breach-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/58784f89733dfe25c41f8ba950c6eb4c46507d63-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ffa4695b83e2f959bc59f0393dfc74e533546a89.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/a4f24e1fe60879234be5da0f8a768feb8f379fdd.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/592212ab60d09999d493c2099f9260d59fab917a.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/207b0ab21f8e27e98ca22f4b5546cc0963d94af6.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Brimstone -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-brimstone" class="agent-toggle">
+
+            <label for="modal-brimstone" class="card-label controller">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/51e62f3c74356a7501d06feba42ac643133257d7-616x822.png"
+                    class="card-img" loading="lazy" alt="Brimstone">
+                <div class="card-name">Brimstone</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-brimstone" id="tab-brimstone-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-brimstone" id="tab-brimstone-1" class="tab-radio-1">
+                <input type="radio" name="tabs-brimstone" id="tab-brimstone-2" class="tab-radio-2">
+                <input type="radio" name="tabs-brimstone" id="tab-brimstone-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-brimstone" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/51e62f3c74356a7501d06feba42ac643133257d7-616x822.png"
+                            class="modal-agent-img" alt="Brimstone">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-brimstone-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d7e00a4ad8a1a01b2edcb9fc1193d05e4e50248f-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-brimstone-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5325b2340045a32d919d467ce3b09c3725de73ea-126x126.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-brimstone-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f6c1e1c587dbfe97a4185a47326ce45c42620583-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-brimstone-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8cfa836d1d19356685e42c13054f9f5bc8e9e029-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/9df59d490062acceb7c6ca32a3650b55718381f7.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/8e0b72295747346b60c354765944f5233fb208f2.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/da2d65e4abc2129e284cf5248fd70925f093a0b3.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ccd8e6c574b7017a2681e5d37c744f5a654327e3.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Chamber -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-chamber" class="agent-toggle">
+
+            <label for="modal-chamber" class="card-label sentinel">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0f5b668b77499c0051201389d6ac5e7343c9727f-616x822.png"
+                    class="card-img" loading="lazy" alt="Chamber">
+                <div class="card-name">Chamber</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-chamber" id="tab-chamber-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-chamber" id="tab-chamber-1" class="tab-radio-1">
+                <input type="radio" name="tabs-chamber" id="tab-chamber-2" class="tab-radio-2">
+                <input type="radio" name="tabs-chamber" id="tab-chamber-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-chamber" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0f5b668b77499c0051201389d6ac5e7343c9727f-616x822.png"
+                            class="modal-agent-img" alt="Chamber">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-chamber-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d8a0105305eefcd44c6c5c823bc6638c18d3850c-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-chamber-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/53b23071d96ffa2d27b73c5edb6ba8b0cf1dc30a-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-chamber-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6070c2db4a22931c24ff59349664a0c666a777c3-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-chamber-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b2f83e29d7ff8fbc59aa568eca0ed82d30ab007f-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/745571f61d83d880c42278a35a072cdd8b7bfa12.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/6d191f3734a8170d99f66642041da9f33240d319.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/245fa173c5d3677e3838d52fb155b6366d19c91b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/49f14376a65d54586c350e7fe863ba30911032a0.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Clove -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-clove" class="agent-toggle">
+
+            <label for="modal-clove" class="card-label controller">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9f02060077f9d61dbe89555a339e6231006d9b7b-616x822.png"
+                    class="card-img" loading="lazy" alt="Clove">
+                <div class="card-name">Clove</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-clove" id="tab-clove-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-clove" id="tab-clove-1" class="tab-radio-1">
+                <input type="radio" name="tabs-clove" id="tab-clove-2" class="tab-radio-2">
+                <input type="radio" name="tabs-clove" id="tab-clove-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-clove" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9f02060077f9d61dbe89555a339e6231006d9b7b-616x822.png"
+                            class="modal-agent-img" alt="Clove">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-clove-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b193ce03089f357e330a51876dbb7172444e80da-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-clove-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5ce846ce8e5ae7ce7904f0c31824f7729307743e-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-clove-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8207dec024cbac83685eb14379055e25d8c3bbed-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-clove-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/cb541873b62077199333f468fddd54620635870a-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/71b28c3a8e3b6f29a2523f2cada52f2ea5a1eab0.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/f74f0d7b96cae0bcf51e97ad99883a370508a381.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/4adb022f083d3887f73d23f60de71cccb45e6d83.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/b9e4ee59e2e2a492ec5a76f71c2161faa6f03981.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Cypher -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-cypher" class="agent-toggle">
+
+            <label for="modal-cypher" class="card-label sentinel">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4a648cdbcbbeef137050deefeaf6a1369c606666-616x822.png"
+                    class="card-img" loading="lazy" alt="Cypher">
+                <div class="card-name">Cypher</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-cypher" id="tab-cypher-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-cypher" id="tab-cypher-1" class="tab-radio-1">
+                <input type="radio" name="tabs-cypher" id="tab-cypher-2" class="tab-radio-2">
+                <input type="radio" name="tabs-cypher" id="tab-cypher-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-cypher" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4a648cdbcbbeef137050deefeaf6a1369c606666-616x822.png"
+                            class="modal-agent-img" alt="Cypher">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-cypher-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/292fbe783ac9e2f638822c5f87f09b005b48a712-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-cypher-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/eae012cb583a41bbc0de83f0963a40de58f5534f-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-cypher-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/df43766f56e1e844ed1b179722c9444a1bd1d45c-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-cypher-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3e8e1779afeebd0612c019f8b2d41d7a984781b3-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/54a8dfaa9b82c7aaf994b0432bb25ef1e95c985c.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/825ba0643c74ad583350d1eb562bb7650ad78ae0.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/aab21b75eb43f0e8cc9c0b816cb4877ae868b9fd.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ddeaad5ff2e4865351755b71fdc4fc97339fb334.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Deadlock -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-deadlock" class="agent-toggle">
+
+            <label for="modal-deadlock" class="card-label sentinel">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/477284dfe402a85abcf6b07512bcd6f01c8fe60e-616x822.png"
+                    class="card-img" loading="lazy" alt="Deadlock">
+                <div class="card-name">Deadlock</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-deadlock" id="tab-deadlock-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-deadlock" id="tab-deadlock-1" class="tab-radio-1">
+                <input type="radio" name="tabs-deadlock" id="tab-deadlock-2" class="tab-radio-2">
+                <input type="radio" name="tabs-deadlock" id="tab-deadlock-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-deadlock" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/477284dfe402a85abcf6b07512bcd6f01c8fe60e-616x822.png"
+                            class="modal-agent-img" alt="Deadlock">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-deadlock-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3abe232b9adae7ae2d96a5b87d0a4fecb8a3bd5a-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-deadlock-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f712588876f0df7fa899418b4f2b2b6fbccfedbf-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-deadlock-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/4516d714505d1a69918c8405dda463aeb7c5718b-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-deadlock-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/fba13a9ca1a5efb4e3456b96c0e78cbf4b3ec46d-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/e2c77e5b49fc3b53a7c625eb7646e51e7094dc52.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/a9dc93d62c1ae6c51b12ed1e84a5d96c678677f9.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/d7576f43161214699762f1858e2fc8e2d3112077.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/b995bab386bd58541eacfe0e065a808081c0b9ea.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Fade -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-fade" class="agent-toggle">
+
+            <label for="modal-fade" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/e7099cc13a665ed2b556d514e50984393ed49967-616x822.png"
+                    class="card-img" loading="lazy" alt="Fade">
+                <div class="card-name">Fade</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-fade" id="tab-fade-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-fade" id="tab-fade-1" class="tab-radio-1">
+                <input type="radio" name="tabs-fade" id="tab-fade-2" class="tab-radio-2">
+                <input type="radio" name="tabs-fade" id="tab-fade-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-fade" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/e7099cc13a665ed2b556d514e50984393ed49967-616x822.png"
+                            class="modal-agent-img" alt="Fade">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-fade-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8f34a932e08cdc5e6472b445f5c2dc150228eda7-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-fade-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/272ae63510fddab9fa751f59349def5bd09a40b2-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-fade-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/0389b190631d8c27a09e147070aab4b706113959-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-fade-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/7ba7b49c678cfcf07564ab57907c60636bb916b0-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ed5b27f8f8acf6420d5f0e30938e963a204cfeca.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/2ee3d74b1105ab3cd996821fb07e4d6aa5c77c1a.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/d401c0074081fd609fa08710174f27fc216c5b92.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/fd638db2f5041f8bc09f311af2c460cec579edcd.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Gekko -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-gekko" class="agent-toggle">
+
+            <label for="modal-gekko" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/8d88f133f735f6a9077679b1ece754e5624c728e-616x822.png"
+                    class="card-img" loading="lazy" alt="Gekko">
+                <div class="card-name">Gekko</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-gekko" id="tab-gekko-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-gekko" id="tab-gekko-1" class="tab-radio-1">
+                <input type="radio" name="tabs-gekko" id="tab-gekko-2" class="tab-radio-2">
+                <input type="radio" name="tabs-gekko" id="tab-gekko-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-gekko" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/8d88f133f735f6a9077679b1ece754e5624c728e-616x822.png"
+                            class="modal-agent-img" alt="Gekko">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-gekko-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/0be9c33b718eb7f941890558e661f147802cf762-256x236.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-gekko-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5cd2d39b6747b897e6648172d084d355477ea545-255x248.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-gekko-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6a9ead27349e4fa318bc426ac57f9addb2ecf143-252x175.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-gekko-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/589f75f0e50a8c1c465e2bf95599d140c52c69f4-254x241.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/e9a92a506942c735f5a986ee9489fad34b192843.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/f3a565e0cde441f1754eeadda2427020a795d4a0.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/85f2c3958091bf4b8fb475c8bda0dcb10a409fbc.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/fe30846150b8f87f7f945a3f0c82e59d0522dbdc.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Harbor -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-harbor" class="agent-toggle">
+
+            <label for="modal-harbor" class="card-label controller">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1246b5c517f6c8fa660e884a7032c1c54994003e-616x822.png"
+                    class="card-img" loading="lazy" alt="Harbor">
+                <div class="card-name">Harbor</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-harbor" id="tab-harbor-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-harbor" id="tab-harbor-1" class="tab-radio-1">
+                <input type="radio" name="tabs-harbor" id="tab-harbor-2" class="tab-radio-2">
+                <input type="radio" name="tabs-harbor" id="tab-harbor-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-harbor" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1246b5c517f6c8fa660e884a7032c1c54994003e-616x822.png"
+                            class="modal-agent-img" alt="Harbor">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-harbor-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/113687d2d723a44d435c3fb0490b55ac51560bfd-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-harbor-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/95fee21657c2d93ebc45991e01e7ecd24cfb8de5-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-harbor-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7788537e17e3d4f486c2187bc2608a877a4fa0a3-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-harbor-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/6aef01d0fab39b3a05756749692a3508880bbde4-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/1705161e278ec0d669e17e3392ece2cfb3555316.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/e8a2822075831bdda3b1a121a569c61cb865eb59.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/ba5abcf93cae8d9dfacaac56862dd400407d416e.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/820946b15b9a68ca46270d44363574dc634b8c1f.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Iso -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-iso" class="agent-toggle">
+
+            <label for="modal-iso" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2c35cef9c38283f8478d1e808b1c129f371e50b3-616x822.png"
+                    class="card-img" loading="lazy" alt="Iso">
+                <div class="card-name">Iso</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-iso" id="tab-iso-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-iso" id="tab-iso-1" class="tab-radio-1">
+                <input type="radio" name="tabs-iso" id="tab-iso-2" class="tab-radio-2">
+                <input type="radio" name="tabs-iso" id="tab-iso-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-iso" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2c35cef9c38283f8478d1e808b1c129f371e50b3-616x822.png"
+                            class="modal-agent-img" alt="Iso">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-iso-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/67aa0a3de742de9793d4b1fbfae38961c8d0076f-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-iso-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ac58844d85858401edcefdb8e38ec23bfb672481-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-iso-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2439fd36c37debf4bd082c0609b356733577de04-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-iso-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/67aa0a3de742de9793d4b1fbfae38961c8d0076f-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/17503f71b58f654d583a66e29dab75460677576f.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/11ad2731215ec978c89fdb675aaf3b591c3c3c55.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/5e331c774ffde4e8e0c45a8844b0237b7d75ba3b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/6fbd2b0e16ac3bda095094770ce6b1d403fc3832.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Jett -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-jett" class="agent-toggle">
+
+            <label for="modal-jett" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d41286dc9017bf79c0b4d907b7a260c27b0adb69-616x822.png"
+                    class="card-img" loading="lazy" alt="Jett">
+                <div class="card-name">Jett</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-jett" id="tab-jett-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-jett" id="tab-jett-1" class="tab-radio-1">
+                <input type="radio" name="tabs-jett" id="tab-jett-2" class="tab-radio-2">
+                <input type="radio" name="tabs-jett" id="tab-jett-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-jett" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d41286dc9017bf79c0b4d907b7a260c27b0adb69-616x822.png"
+                            class="modal-agent-img" alt="Jett">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-jett-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a0c72fe005e2f87f60f38fdb440569271c51a8fb-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-jett-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/18cb69683c16d11590eda4c5458a7025f0667895-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-jett-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8c5e94bfc817e5d35eca7692fd242404de5ac5dd-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-jett-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8d8e6c956af64b241e49e3625b3cb02fcc61eb09-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/4cbc968f05713579aae9464c5a16dc3f6863f943.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ec6b3cf1f8ac09d597b0193de1d7bb81335b40e4.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/3353597819f0c032d56ff947d9762368b4ee6c6b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/667770571300e065b332617e5c8f2e009ed88928.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Kay/0 -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-kay0" class="agent-toggle">
+
+            <label for="modal-kay0" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fe52e0efac73ec782b19a54e98a4658b03677407-616x822.png"
+                    class="card-img" loading="lazy" alt="Kay/0">
+                <div class="card-name">Kay/0</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-kay0" id="tab-kay0-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-kay0" id="tab-kay0-1" class="tab-radio-1">
+                <input type="radio" name="tabs-kay0" id="tab-kay0-2" class="tab-radio-2">
+                <input type="radio" name="tabs-kay0" id="tab-kay0-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-kay0" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fe52e0efac73ec782b19a54e98a4658b03677407-616x822.png"
+                            class="modal-agent-img" alt="Kay/0">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-kay0-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/92fedb7a8c812df29cbaa2390aa07561fe2d89da-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-kay0-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6771e933554434541c91d58749aa0bbda58619e1-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-kay0-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/40a6811eadf8b794b94e2b40695e14b7c36281a8-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-kay0-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/dabcf9f31c4b63cb2c2e537655ca0cc3b6e08d24-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/9ad839fef2fd8d16d9608f8a6efd709091f0b74a.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/dbccb81297a30a9ddc92ec1883c832298f014504.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/292e5319f9cd0aa7eee01af47413f4009236f87e.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/d9e35cc5d68e533df2d6e15a93471a5c073b0471.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Killjoy -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-killjoy" class="agent-toggle">
+
+            <label for="modal-killjoy" class="card-label sentinel">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/820d36d431fff77b1e1ece39ad6f007746bd31f6-616x822.png"
+                    class="card-img" loading="lazy" alt="Killjoy">
+                <div class="card-name">Killjoy</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-killjoy" id="tab-killjoy-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-killjoy" id="tab-killjoy-1" class="tab-radio-1">
+                <input type="radio" name="tabs-killjoy" id="tab-killjoy-2" class="tab-radio-2">
+                <input type="radio" name="tabs-killjoy" id="tab-killjoy-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-killjoy" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/820d36d431fff77b1e1ece39ad6f007746bd31f6-616x822.png"
+                            class="modal-agent-img" alt="Killjoy">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-killjoy-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d86a84fcd7cc656fec66be28d496a56b5171dd52-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-killjoy-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6fcb1a4dfb49ad8fabae929bc5aea5240ddb42ac-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-killjoy-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/4ca9c7f4a85e5e454d8d9638247bd36cab1d4124-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-killjoy-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d7d7787df75af327d171b723a262172693125dc4-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/0582e7e1a0733667614492129abef67e17cfc92c.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/007e5042385d6f7315f4b4cb3fbd3b2c71b530c1.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/b47a0b24d2499935d28f845a067984a52dbc2542.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/9485f7bbf04841f4c37e031f07dad03e9cbc1bf9.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Neon -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-neon" class="agent-toggle">
+
+            <label for="modal-neon" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/14145d7bf9be17afa80c04ee4fbe200076cc1769-616x822.png"
+                    class="card-img" loading="lazy" alt="Neon">
+                <div class="card-name">Neon</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-neon" id="tab-neon-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-neon" id="tab-neon-1" class="tab-radio-1">
+                <input type="radio" name="tabs-neon" id="tab-neon-2" class="tab-radio-2">
+                <input type="radio" name="tabs-neon" id="tab-neon-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-neon" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/14145d7bf9be17afa80c04ee4fbe200076cc1769-616x822.png"
+                            class="modal-agent-img" alt="Neon">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-neon-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/fe17f22ec96403cf3b58b707db4f8e77531a47a6-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-neon-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2bfcbc821895e8d01a4f17e8f045dabf24c052e0-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-neon-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/46c16f398d28f7e029f42bc742f3838443e8a3d3-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-neon-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6a0012b92eba95e42828411c1e58d8d1c6420a5f-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/db28dddd3cf49297ca4c10c1898e4d3702af9d6f.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/a1c82c1a3aa3676bbff05dae9af8fdd8f2f25fb7.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/c1ba9d2ec4c567f6b27ddeab512ed245d5706e6b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/917de7be4f9bad96b54f47a4de6f91c323a57a6a.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Omen -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-omen" class="agent-toggle">
+
+            <label for="modal-omen" class="card-label controller">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/015a083717e9687de8a741cfceddb836775b5f9f-616x822.png"
+                    class="card-img" loading="lazy" alt="Omen">
+                <div class="card-name">Omen</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-omen" id="tab-omen-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-omen" id="tab-omen-1" class="tab-radio-1">
+                <input type="radio" name="tabs-omen" id="tab-omen-2" class="tab-radio-2">
+                <input type="radio" name="tabs-omen" id="tab-omen-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-omen" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/015a083717e9687de8a741cfceddb836775b5f9f-616x822.png"
+                            class="modal-agent-img" alt="Omen">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-omen-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/e8544e323a51c9b8ff7ae8fca257e038a570819d-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-omen-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/e4012aeda506a8e77f2e83d48aa8c5c73a37b659-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-omen-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2790998724c94f38688c9c6c5d43c0712cae18ef-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-omen-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/fed58cd5eb95f4e50b7b8230a150c3b686b82f78-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/f401fc788f3182b6d5aa25af6056c842117b1b36.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ba0b035a5ff2bb8d9487ba461b3d15900ff50f6b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/33550fee410c5a55ea8832f41827a12aaddb686f.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/252cf8ad86b6aca6210ba93ea856f52708476eba.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Phoenix -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-phoenix" class="agent-toggle">
+
+            <label for="modal-phoenix" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/47387e354c34d51b84066bc47af3c5755b92b9c5-616x822.png"
+                    class="card-img" loading="lazy" alt="Phoenix">
+                <div class="card-name">Phoenix</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-phoenix" id="tab-phoenix-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-phoenix" id="tab-phoenix-1" class="tab-radio-1">
+                <input type="radio" name="tabs-phoenix" id="tab-phoenix-2" class="tab-radio-2">
+                <input type="radio" name="tabs-phoenix" id="tab-phoenix-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-phoenix" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/47387e354c34d51b84066bc47af3c5755b92b9c5-616x822.png"
+                            class="modal-agent-img" alt="Phoenix">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-phoenix-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/beb874d19c79982f0e99e858098c067d9132a95a-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-phoenix-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/67df9ca3cb158a945fc9b13eb0e3949683c4c65d-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-phoenix-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d807a982ce70475acb2e8461b4f8737204e35d96-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-phoenix-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d428c0c6c73ba34676e063092a7ae7157268db0c-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/c62125b1b5637b7b0e0881348502f7e8b8e93572.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/b702ed368fd050e7cb77adf26bc55bb63c5936fb.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/8c5b0e23be0814583ad4601b4297d04dbaff79f7.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/aa122a33b1ef0320174991b8ddee4e82dbc2b937.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Raze -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-raze" class="agent-toggle">
+
+            <label for="modal-raze" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/40b4b242b68afe30d21e7f95bdcacaebca46ea60-616x822.png"
+                    class="card-img" loading="lazy" alt="Raze">
+                <div class="card-name">Raze</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-raze" id="tab-raze-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-raze" id="tab-raze-1" class="tab-radio-1">
+                <input type="radio" name="tabs-raze" id="tab-raze-2" class="tab-radio-2">
+                <input type="radio" name="tabs-raze" id="tab-raze-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-raze" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/40b4b242b68afe30d21e7f95bdcacaebca46ea60-616x822.png"
+                            class="modal-agent-img" alt="Raze">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-raze-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ce6b40ccaa79e226c9d5e237af6739dfe412b948-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-raze-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/4751e0f887099484e0c39c69d7d4762b782e99f8-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-raze-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5ab8a4e5cf6d7229021e6cfe8b50a03543c5978f-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-raze-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9a02bebe0a944ad2f2c764a0df1dfc8a1e7757fa-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/82028c5e9ae38b59660dbf9f57f341f1c20c5480.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/d75fd65435a84906bb3e8ad0b97c505e7359697b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/c824fe8e08a4f36be2273aa456819d2c2b6cd6b0.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/7281a34566f12d202dee3d43e0fa0bf0b4271d60.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Reyna -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-reyna" class="agent-toggle">
+
+            <label for="modal-reyna" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7cb513c9b3eae3286449776e85753138436d553c-616x822.png"
+                    class="card-img" loading="lazy" alt="Reyna">
+                <div class="card-name">Reyna</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-reyna" id="tab-reyna-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-reyna" id="tab-reyna-1" class="tab-radio-1">
+                <input type="radio" name="tabs-reyna" id="tab-reyna-2" class="tab-radio-2">
+                <input type="radio" name="tabs-reyna" id="tab-reyna-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-reyna" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7cb513c9b3eae3286449776e85753138436d553c-616x822.png"
+                            class="modal-agent-img" alt="Reyna">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-reyna-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/62dc726ff81568e4500167d0d402e0b083c507d9-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-reyna-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a9ca2fbba6c3f00e1a07e3514ac6a8f107e43e17-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-reyna-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9d295b17382acbc17bdb4e45e0be74d58e94e6c5-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-reyna-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/daf434a1a75cee1f52309b2cf4eb8f878d07b419-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/82028c5e9ae38b59660dbf9f57f341f1c20c5480.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/d75fd65435a84906bb3e8ad0b97c505e7359697b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/c824fe8e08a4f36be2273aa456819d2c2b6cd6b0.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/7281a34566f12d202dee3d43e0fa0bf0b4271d60.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Sage -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-sage" class="agent-toggle">
+
+            <label for="modal-sage" class="card-label sentinel">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/58a180961a14beb631877921e647c233804853c1-616x822.png"
+                    class="card-img" loading="lazy" alt="Sage">
+                <div class="card-name">Sage</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-sage" id="tab-sage-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-sage" id="tab-sage-1" class="tab-radio-1">
+                <input type="radio" name="tabs-sage" id="tab-sage-2" class="tab-radio-2">
+                <input type="radio" name="tabs-sage" id="tab-sage-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-sage" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/58a180961a14beb631877921e647c233804853c1-616x822.png"
+                            class="modal-agent-img" alt="Sage">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-sage-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f2931e5af58255216179b21cce81f53eab15d6ee-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-sage-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/cdc246179e160ded2788fd37ac21f10bc040ad54-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-sage-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/829075fef7193503dd480947b79d78193d729d42-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-sage-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/90b6e1ca1a3ecd68e2a3072515d071f80bf46c1d-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/45053483528b96cbe003ac39e6b53c9866d5fea6.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/a247d196383136d3de15b4d6d9c816e3c8054ba0.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/a79b1d6838cee5572b428babd74a2db0c07f4ea5.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/df83929ed5da349c37a5bf4600c2b55010c72402.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Skye -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-skye" class="agent-toggle">
+
+            <label for="modal-skye" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/37ea1466beebb54aad4f16efbad184566cb80368-616x822.png"
+                    class="card-img" loading="lazy" alt="Skye">
+                <div class="card-name">Skye</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-skye" id="tab-skye-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-skye" id="tab-skye-1" class="tab-radio-1">
+                <input type="radio" name="tabs-skye" id="tab-skye-2" class="tab-radio-2">
+                <input type="radio" name="tabs-skye" id="tab-skye-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-skye" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/37ea1466beebb54aad4f16efbad184566cb80368-616x822.png"
+                            class="modal-agent-img" alt="Skye">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-skye-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b905a3a39bc979bc43653eccf9fdb289b03c5223-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-skye-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ed6e5f91be20274ff84cb24644c3b559bfa8fed1-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-skye-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b80c38c49a8e37d69cda3bf335c885170975b415-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-skye-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9ccbd11eadca50047c6e84125285a11e1d334acd-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/3256cb83ad3563516497864209ea585c595cd8df.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/64edfd7af8a7125dd9c981c52fdc60f9560b821b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/d64273e31bf2c4d16c52acc2f461e9accdb7c7f9.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/82ab63d9255f9fbbea7c13e00cd46b09ff90d25b.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Sova -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-sova" class="agent-toggle">
+
+            <label for="modal-sova" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/08b3d8822544bd327ebed0768c8b90fcec83d1a5-616x822.png"
+                    class="card-img" loading="lazy" alt="Sova">
+                <div class="card-name">Sova</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-sova" id="tab-sova-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-sova" id="tab-sova-1" class="tab-radio-1">
+                <input type="radio" name="tabs-sova" id="tab-sova-2" class="tab-radio-2">
+                <input type="radio" name="tabs-sova" id="tab-sova-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-sova" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/08b3d8822544bd327ebed0768c8b90fcec83d1a5-616x822.png"
+                            class="modal-agent-img" alt="Sova">
+                    </div>
+
+                    <div class="modal-right">
+
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-sova-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8ab5a2d03438ff0f8b2ba2d7b26c812ab6b7adbb-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-sova-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b428e1783f98a0990b86d13872f564095442f44b-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-sova-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/07877d7c79546ef64338eae550ffa5649f3582b0-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-sova-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/7b9f078b0576e87e74b8175b0d33ac682b7a8ab3-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/7776fa677e90c72da94ec7d188d2d4618116c41b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/50f9d870fa2a9b9ba38408eb718ffc06879c11a8.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/6c6f036376c18ddf4ed0c589b506b8889d86a29a.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/df9ce34c3d2a7f527929cac123501e1473e0da0e.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Tejo -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-tejo" class="agent-toggle">
+
+            <label for="modal-tejo" class="card-label initiator">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3413df9939de606a355c1f88fbfc35f0774c19c9-587x900.jpg"
+                    class="card-img" loading="lazy" alt="Tejo">
+                <div class="card-name">Tejo</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-tejo" id="tab-tejo-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-tejo" id="tab-tejo-1" class="tab-radio-1">
+                <input type="radio" name="tabs-tejo" id="tab-tejo-2" class="tab-radio-2">
+                <input type="radio" name="tabs-tejo" id="tab-tejo-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-tejo" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3413df9939de606a355c1f88fbfc35f0774c19c9-587x900.jpg"
+                            class="modal-agent-img" alt="Tejo">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-tejo-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0bbf5fc8e23c5130760d961d478b9e04eb350293-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-tejo-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c79ba948fd3bd1bf0001a01f6d9f4a4237144b0c-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-tejo-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ee6c5d81edeea5eaac58e215cef9d93893c52225-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-tejo-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/329422a9eeeeb9446eedd9ede2b8346a9453cc48-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/68c56e770855ce32eab9ba4283e4496952295d9a.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/6fdd2855da57354f3f1d274bea06f8f24140ef23.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/612a857ad0b5ebfa86611af953066356cd33fe97.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8060ca420965ebd775f8cdbe3589600ee5733911.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Veto -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-veto" class="agent-toggle">
+
+            <label for="modal-veto" class="card-label sentinel">
+                <img src="/image/Veto.png" class="card-img" loading="lazy" alt="Veto">
+                <div class="card-name">Veto</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-veto" id="tab-veto-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-veto" id="tab-veto-1" class="tab-radio-1">
+                <input type="radio" name="tabs-veto" id="tab-veto-2" class="tab-radio-2">
+                <input type="radio" name="tabs-veto" id="tab-veto-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-veto" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="/image/Veto.png" class="modal-agent-img" alt="Veto">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-veto-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/791557ef1bebc6e1e2a8cda1f931563ebf284dfc-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-veto-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ac857a395482a1a805a3b108daea13ff48324743-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-veto-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4e301a2ef908be17137fedb3b373373f10a038f0-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-veto-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/deec0846717df85f1a1dfba9d578c41bf6eef870-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/c20ef1ed8b1ac66589d7be8ce91eb8d238add412.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/120c1d637aadbeb6995ca80f5819bf9647b9056c.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/e1e6a22165aecb88f0bb8527cfee9e16c6bdc788.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/0711732cf4d5598aee8623511574976463cfa331.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Viper -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-viper" class="agent-toggle">
+
+            <label for="modal-viper" class="card-label controller">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/152244f121e61ca32bdd2bea9fc5370e315664fb-616x822.png"
+                    class="card-img" loading="lazy" alt="Viper">
+                <div class="card-name">Viper</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-viper" id="tab-viper-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-viper" id="tab-viper-1" class="tab-radio-1">
+                <input type="radio" name="tabs-viper" id="tab-viper-2" class="tab-radio-2">
+                <input type="radio" name="tabs-viper" id="tab-viper-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-viper" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/152244f121e61ca32bdd2bea9fc5370e315664fb-616x822.png"
+                            class="modal-agent-img" alt="Viper">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-viper-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3eba05b8ed1ac69c440d54cec365e537d294be25-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-viper-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b1204a1fbcc0e2fced090f18ad18e7587357c783-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-viper-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f477dce332e51e53f4e2f565f2d3d868dd2d0df8-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-viper-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/dab73c2ea877aca79a5bb0b8533d1de4ac07186a-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/49ff8efd75b76941da3018362061275d3a1d43d6.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/36db8f44946850c2a20aba43d8ad3ecd977c7d7e.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/9eeb3090efed080792e6ea2f264fd60ebb12694e.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/4601fd972c588a79cdd910b2497546f156886c40.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Vyse -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-vyse" class="agent-toggle">
+
+            <label for="modal-vyse" class="card-label sentinel">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/370e4b820670ef0bac7e685f6e8c5e64d19f1890-587x900.png"
+                    class="card-img" loading="lazy" alt="Vyse">
+                <div class="card-name">Vyse</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-vyse" id="tab-vyse-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-vyse" id="tab-vyse-1" class="tab-radio-1">
+                <input type="radio" name="tabs-vyse" id="tab-vyse-2" class="tab-radio-2">
+                <input type="radio" name="tabs-vyse" id="tab-vyse-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-vyse" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/370e4b820670ef0bac7e685f6e8c5e64d19f1890-587x900.png"
+                            class="modal-agent-img" alt="Vyse">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-vyse-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/665d8820138b5d817a7f6f6522e983edd1ea9df7-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-vyse-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/f0ac7fb5d31a65820bcc22217abcafbbfb4077e7-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-vyse-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3a3e90a9b09ba95e7aed7b3f5979ed88d62d2785-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-vyse-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d67be7669c8a4b483305cf7501c27c25adb44236-1024x1024.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/bacb07fdf5b13efeab5e24168f8e244257c1d0cb.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/5cefca2b93f097285ce2cb4f20fec7184b555218.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/84154b3401b08acad60d739616017a4fcd86710a.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/f9d32afb39a3260b915ea6ef441054c904a69e91.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Waylay -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-waylay" class="agent-toggle">
+
+            <label for="modal-waylay" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/11c2b158d932076d3215749a34b7b4209b48ce44-587x900.png"
+                    class="card-img" loading="lazy" alt="Waylay">
+                <div class="card-name">Waylay</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-waylay" id="tab-waylay-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-waylay" id="tab-waylay-1" class="tab-radio-1">
+                <input type="radio" name="tabs-waylay" id="tab-waylay-2" class="tab-radio-2">
+                <input type="radio" name="tabs-waylay" id="tab-waylay-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-waylay" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/11c2b158d932076d3215749a34b7b4209b48ce44-587x900.png"
+                            class="modal-agent-img" alt="Waylay">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-waylay-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/07a0e5e9ef539d1465fde3e2711c1c4d09756dcc-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-waylay-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3a70bfa66f910cfa825bd95264689f610e52c486-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-waylay-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7bbb9874cc60f9ebe17f44d51ee4f956e39cf587-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-waylay-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ac03cb00955a093d03d399a0ac967b4f82436b02-128x128.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/705b3917c26e9e97c5343d57875cd3404537190b.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/e06f520d0e844b3c136623c2568137ac47bc54ff.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/189ff46acf7dd27b245631af9a6c51ef95013bb7.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/b04a789382009e666cca021889586c6bc00bbaf5.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AGENT: Yoru -->
+        <div class="agent-wrapper">
+            <input type="checkbox" id="modal-yoru" class="agent-toggle">
+
+            <label for="modal-yoru" class="card-label duelist">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/05e1a996814dd10d7179efee327d29a7be00e912-616x822.png"
+                    class="card-img" loading="lazy" alt="Yoru">
+                <div class="card-name">Yoru</div>
+            </label>
+
+            <div class="modal-overlay">
+                <!-- Tabs Radios -->
+                <input type="radio" name="tabs-yoru" id="tab-yoru-0" class="tab-radio-0" checked>
+                <input type="radio" name="tabs-yoru" id="tab-yoru-1" class="tab-radio-1">
+                <input type="radio" name="tabs-yoru" id="tab-yoru-2" class="tab-radio-2">
+                <input type="radio" name="tabs-yoru" id="tab-yoru-3" class="tab-radio-3">
+
+                <div class="modal-content">
+                    <label for="modal-yoru" class="close-btn">×</label>
+
+                    <div class="modal-left">
+                        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/05e1a996814dd10d7179efee327d29a7be00e912-616x822.png"
+                            class="modal-agent-img" alt="Yoru">
+                    </div>
+
+                    <div class="modal-right">
+
+                        <div class="tabs-nav">
+
+                            <label for="tab-yoru-0" class="tab-label label-0">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ea733bf224ae53e8e53cabfae19bfc12ce9fcda3-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-yoru-1" class="tab-label label-1">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/580f94ecab50ae7c01279dcd0adb86f9c65362c3-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-yoru-2" class="tab-label label-2">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/43416e5b34cd80c691ed0cc3b69fc73fae93f923-256x256.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                            <label for="tab-yoru-3" class="tab-label label-3">
+                                <img
+                                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/51e64df7500b3114c76e5e86dfea2e622bb438e5-512x512.png?accountingTag=VAL&auto=format&fit=crop&q=80&h=90&w=90&crop=center">
+                            </label>
+
+                        </div>
+
+                        <video loop preload="none" class="video-container video-0"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/295ab26ef6097d28da0bef9c9b4c6185a80071c8.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-1"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/be352287c5704d82d1acbff5ecdee5187755d235.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-2"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/ef008c8e848a054f88e88f173c03279a45a1c796.mp4?accountingTag=VAL"></video>
+
+                        <video loop preload="none" class="video-container video-3"
+                            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/9ca7fac6ec9514fa06b9785aad2ead0c3fba0eec.mp4?accountingTag=VAL"></video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        // 1. GESTION DES MODALES (Ouvrir/Fermer)
+        const agentToggles = document.querySelectorAll('.agent-toggle');
+
+        agentToggles.forEach(toggle => {
+            toggle.addEventListener('change', (e) => {
+                const modalOverlay = e.target.nextElementSibling.nextElementSibling; // On cible la div .modal-overlay
+                const videos = modalOverlay.querySelectorAll('video');
+
+                if (e.target.checked) {
+                    // A. Si on ouvre la modale :
+                    // On cherche quel onglet est actif par défaut (souvent le 0)
+                    const activeRadio = modalOverlay.querySelector('input[type="radio"]:checked');
+                    if (activeRadio) {
+                        // On simule un changement pour lancer la bonne vidéo
+                        activeRadio.dispatchEvent(new Event('change'));
+                    }
+                } else {
+                    // B. Si on ferme la modale :
+                    // On met PAUSE sur toutes les vidéos pour arrêter le son/l'image
+                    videos.forEach(video => {
+                        video.pause();
+                        video.currentTime = 0; // Remet au début
+                    });
+                }
+            });
+        });
+
+        // 2. GESTION DES ONGLETS (Changer de compétence)
+        const tabRadios = document.querySelectorAll('input[type="radio"]');
+
+        tabRadios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                // On remonte au parent .modal-overlay pour ne toucher que l'agent actuel
+                const modalOverlay = e.target.closest('.modal-overlay');
+                if (!modalOverlay) return;
+
+                // 1. On coupe toutes les vidéos de cet agent
+                const allVideos = modalOverlay.querySelectorAll('video');
+                allVideos.forEach(v => {
+                    v.pause();
+                    v.currentTime = 0;
+                });
+
+                // 2. On identifie quelle vidéo lancer
+                // Les radios ont des classes "tab-radio-0", "tab-radio-1", etc.
+                // Les vidéos ont des classes "video-0", "video-1", etc.
+
+                // On récupère le chiffre à la fin de la classe du radio (ex: "tab-radio-2" -> "2")
+                let index = 0;
+                e.target.classList.forEach(cls => {
+                    if (cls.startsWith('tab-radio-')) {
+                        index = cls.split('-')[2];
+                    }
+                });
+
+                // 3. On lance la vidéo correspondante
+                const targetVideo = modalOverlay.querySelector(`.video-${index}`);
+                if (targetVideo) {
+                    // Petite sécurité : on attend un micro-instant pour que le CSS affiche la vidéo
+                    // avant de lancer le play(), sinon certains navigateurs bloquent.
+                    setTimeout(() => {
+                        targetVideo.play().catch(err => console.log("Lecture bloquée :", err));
+                    }, 50);
+                }
+            });
+        });
+
+    });
+</script>
+
+</html>

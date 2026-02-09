@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant // CARTES</title>
+    <link href="css2.css" rel="stylesheet">
+</head>
+
+<body class="maps-page">
+
+    <header>
+        <h1>Valorant Maps</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index2.html" class="nav-link">AGENTS</a>
+            <a href="arsenal.html" class="nav-link">ARMES</a>
+            <a href="maps.html" class="nav-link active">CARTES</a>
+        </nav>
+    </header>
+
+    <!-- LOGIQUE DE NAVIGATION (Radios cachés) -->
+    <!-- On utilise l'ID pour contrôler l'affichage via CSS -->
+    <div class="map-controls">
+        <input type="radio" name="map-selector" id="sel-ascent" checked>
+        <input type="radio" name="map-selector" id="sel-bind">
+        <input type="radio" name="map-selector" id="sel-breeze">
+        <input type="radio" name="map-selector" id="sel-fracture">
+        <input type="radio" name="map-selector" id="sel-haven">
+        <input type="radio" name="map-selector" id="sel-icebox">
+        <input type="radio" name="map-selector" id="sel-lotus">
+        <input type="radio" name="map-selector" id="sel-pearl">
+        <input type="radio" name="map-selector" id="sel-split">
+        <input type="radio" name="map-selector" id="sel-abyss">
+        <input type="radio" name="map-selector" id="sel-corrode">
+    </div>
+
+    <main class="maps-container">
+
+        <!-- BARRE LATÉRALE (Liste des noms) -->
+        <!-- BARRE LATÉRALE (Liste des noms) -->
+        <aside class="maps-sidebar">
+
+            <!-- 1. Checkbox invisible pour contrôler le menu -->
+            <input type="checkbox" id="maps-burger-toggle" class="burger-checkbox">
+
+            <!-- 2. En-tête du menu mobile (Titre + Bouton Burger) -->
+            <div class="sidebar-header">
+                <label for="maps-burger-toggle" class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <!-- 3. La liste des liens (cachée par défaut sur mobile) -->
+            <div class="sidebar-inner">
+                <label for="sel-ascent" class="map-link">ASCENT</label>
+                <label for="sel-bind" class="map-link">BIND</label>
+                <label for="sel-breeze" class="map-link">BREEZE</label>
+                <label for="sel-fracture" class="map-link">FRACTURE</label>
+                <label for="sel-haven" class="map-link">HAVEN</label>
+                <label for="sel-icebox" class="map-link">ICEBOX</label>
+                <label for="sel-lotus" class="map-link">LOTUS</label>
+                <label for="sel-pearl" class="map-link">PEARL</label>
+                <label for="sel-split" class="map-link">SPLIT</label>
+                <label for="sel-abyss" class="map-link">ABYSS</label>
+                <label for="sel-corrode" class="map-link">CORRODE</label>
+            </div>
+        </aside>
+
+        <!-- ZONE D'AFFICHAGE (Images) -->
+        <section class="maps-viewer">
+            <!-- Chaque image correspond à un ID. Opacité 0 par défaut. -->
+
+            <div class="map-slide slide-ascent">
+                <img src="/image/Acsent.png" class="bg-blur" alt="">
+                <img src="/image/Acsent.png" class="main-img" alt="Ascent Map">
+                <div class="map-info">
+                    <h2>ASCENT</h2>
+                    <p>Une montée vers le ciel italien.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-bind">
+                <img src="/image/Bind.png" class="bg-blur" alt="">
+                <img src="/image/Bind.png" class="main-img" alt="Bind Map">
+                <div class="map-info">
+                    <h2>BIND</h2>
+                    <p>Pas de milieu, que des téléporteurs.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-breeze">
+                <img src="/image/Breeze.png" class="bg-blur" alt="">
+                <img src="/image/Breeze.png" class="main-img" alt="Breeze Map">
+                <div class="map-info">
+                    <h2>BREEZE</h2>
+                    <p>Une île tropicale aux lignes de vue dégagées.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-fracture">
+                <img src="/image/Fracture.png" class="bg-blur" alt="">
+                <img src="/image/Fracture.png" class="main-img" alt="Fracture Map">
+                <div class="map-info">
+                    <h2>FRACTURE</h2>
+                    <p>Attaquez par les deux côtés.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-haven">
+                <img src="/image/Haven.png" class="bg-blur" alt="">
+                <img src="/image/Haven.png" class="main-img" alt="Haven Map">
+                <div class="map-info">
+                    <h2>HAVEN</h2>
+                    <p>Trois sites pour plus de chaos.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-icebox">
+                <img src="/image/Ice Box.png" class="bg-blur" alt="">
+                <img src="/image/Ice Box.png" class="main-img" alt="Icebox Map">
+                <div class="map-info">
+                    <h2>ICEBOX</h2>
+                    <p>Le froid arctique et les tyroliennes.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-lotus">
+                <img src="/image/Lotus.png" class="bg-blur" alt="">
+                <img src="/image/Lotus.png" class="main-img" alt="Lotus Map">
+                <div class="map-info">
+                    <h2>LOTUS</h2>
+                    <p>Une cité perdue aux portes pivotantes.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-pearl">
+                <img src="/image/Pearl.png" class="bg-blur" alt="">
+                <img src="/image/Pearl.png" class="main-img" alt="Pearl Map">
+                <div class="map-info">
+                    <h2>PEARL</h2>
+                    <p>Sous l'océan, sans mécanique complexe.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-split">
+                <img src="/image/Split.png" class="bg-blur" alt="">
+                <img src="/image/Split.png" class="main-img" alt="Split Map">
+                <div class="map-info">
+                    <h2>SPLIT</h2>
+                    <p>Gare aux hauteurs.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-abyss">
+                <img src="/image/Abyss.png" class="bg-blur" alt="">
+                <img src="/image/Abyss.png" class="main-img" alt="Abyss Map">
+                <div class="map-info">
+                    <h2>ABYSS</h2>
+                    <p>Attention à la chute.</p>
+                </div>
+            </div>
+
+            <div class="map-slide slide-corrode">
+                <img src="/image/Corrode.png" class="bg-blur" alt="">
+                <img src="/image/Corrode.png" class="main-img" alt="Corrode Map">
+                <div class="map-info">
+                    <h2>CORRODE</h2>
+                    <p>Zone contaminée.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
